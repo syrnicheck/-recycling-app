@@ -1,0 +1,59 @@
+ {
+  "trash_items":[
+      {
+        "id": 1,
+        "category_id": 1,
+        "name": "Газеты",
+        "description": "Газеты без пластиковых обложек и вкладышей",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      },
+      {
+        "id": 2,
+        "category_id": 1,
+        "name": "Картон",
+        "description": "Картонная упаковка и коробки",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      },
+      {
+        "id": 3,
+        "category_id": 2,
+        "name": "ПЭТ-бутылки",
+        "description": "Пластиковые бутылки для воды и других напитков",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      },
+      {
+        "id": 4,
+        "category_id": 2,
+        "name": "Пластиковые контейнеры",
+        "description": "Пластиковые контейнеры для хранения еды и других товаров",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      },
+      {
+        "id": 5,
+        "category_id": 3,
+        "name": "Бутылки из прозрачного стекла",
+        "description": "Прозрачные бутылки для напитков",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      },
+      {
+        "id": 6,
+        "category_id": 3,
+        "name": "Бутылки из зеленого стекла",
+        "description": "Зеленые бутылки для напитков",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      },
+      {
+        "id": 7,
+        "category_id": 4,
+        "name": "Алюминиевые банки",
+        "description": "Банки для напитков и других товаров",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      },
+      {
+        "id": 8,
+        "category_id": 4,
+        "name": "Стальные банки",
+        "description": "Банки для консервирования и других товаров",
+        "image": "https://i.pinimg.com/564x/09/3d/eb/093deb3a88a6440cc5c1dfec7bd0ea12.jpg"
+      }
+    ]}

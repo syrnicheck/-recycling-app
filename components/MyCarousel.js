@@ -21,6 +21,10 @@ const MyCarousel = () => {
       id: 3,
       image: require("../assets/3.jpeg"),
     },
+    {
+      id: 4,
+      image: require("../assets/4.jpeg"),
+    },
   ];
 
   const renderItem = ({ item }) => {

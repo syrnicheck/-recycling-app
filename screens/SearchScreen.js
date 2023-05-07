@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from "react-native";
-
 import {
   PlasticIcon,
   MetalIcon,
@@ -15,28 +14,12 @@ import {
   OrganicIcon,
   GlassIcon,
 } from "../svgComponets/SvgComponents";
+import { createStackNavigator } from "@react-navigation/stack";
 
-const SearchScreen = () => {
+const SearchScreen = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState("");
-  //const [recyclingCenters, setRecyclingCenters] = useState([]);
-
   const icons = [PlasticIcon, PaperIcon, GlassIcon, MetalIcon, OrganicIcon];
   const texts = ["Пластик", "Бумага", "Стекло", "Металл", "Органика"];
-
-  // useEffect(() => {
-  //   if (searchQuery !== "") {
-  //     searchRecyclingCenters(searchQuery).then((results) => {
-  //       setRecyclingCenters(results);
-  //     });
-  //   }
-  // }, [searchQuery]);
-
-  // const handleSearch = () => {
-  //   // Perform search using API
-  //   searchRecyclingCenters(searchQuery).then((results) => {
-  //     setRecyclingCenters(results);
-  //   });
-  // };
 
   return (
     <KeyboardAvoidingView
@@ -46,12 +29,18 @@ const SearchScreen = () => {
     >
       <View style={styles.containerSearch}>
         <Text style={styles.title}>Фильтры</Text>
-        <View style={styles.container}>
+        <View style={styles.containerCategory}>
           {icons.map((Icon, index) => (
-            <View key={index} style={styles.item}>
+            <TouchableOpacity
+              key={index}
+              style={styles.item}
+              onPress={() =>
+                navigation.navigate("CategoryList", { category: texts[index] })
+              }
+            >
               <Icon style={styles.image} />
               <Text style={styles.text}>{texts[index]}</Text>
-            </View>
+            </TouchableOpacity>
           ))}
         </View>
 
@@ -69,9 +58,11 @@ const SearchScreen = () => {
     </KeyboardAvoidingView>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+  },
+  containerCategory: {
     marginTop: 20,
     flexDirection: "row",
     flexWrap: "wrap",
